@@ -34,6 +34,22 @@ function ProductHighlight() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
 
 
+          <ProductCard
+          imgSrc="https://picsum.photos/id/231/200/200"
+          productName="The Lorem Ipsum for photos."
+          />
+         
+          <ProductCard
+          imgSrc="https://picsum.photos/id/232/200/200"
+          productName="Wireless Bluetooth Earbuds"
+          />
+          
+          <ProductCard
+          imgSrc="https://picsum.photos/200/200"
+          productName="Stylish Cool Sunglasses in The World"
+          />
+
+
           <ProductCard />
           <ProductCard />
           <ProductCard />
@@ -99,7 +115,6 @@ function ProductHighlight() {
               />
             );
           })}
-
         </div>
       </div>
     </section>
