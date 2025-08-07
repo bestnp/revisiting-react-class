@@ -1,12 +1,17 @@
 
+
+import ProductCard from "./ProductCard"
+
 import {
   ShoppingCartIcon,
 } from "@heroicons/react/24/solid";
 
 function ProductHighlight() {
 import ProductCard from "./ProductCard";
+
 import axios from "axios";
 import { useState, useEffect } from "react";
+
 
 function ProductHighlight() {
   const [products, setProducts] = useState([]);
@@ -27,6 +32,11 @@ function ProductHighlight() {
       <div className="container mx-auto">
         <h2 className="text-2xl font-semibold mb-4">Featured Products</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+
+          <ProductCard />
+          <ProductCard />
+          <ProductCard />
 
           <div className="bg-white p-4 shadow-md">
             <img
@@ -89,6 +99,7 @@ function ProductHighlight() {
               />
             );
           })}
+
         </div>
       </div>
     </section>
